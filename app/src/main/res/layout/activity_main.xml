@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="108dp"
+        android:layout_height="100dp"
+        android:src="@drawable/imagenprincipal"
+        android:transitionName="logoImageTrans"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido AppTaller"
+        android:fontFamily="@font/abel"
+        android:layout_marginTop="28dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:transitionName="textTrans"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicia Sesión"
+        android:textSize="24sp"
+        android:fontFamily="@font/abel"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="clave"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/clave"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/olvidasteContra"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textSize="20dp"
+            android:textColor="@android:color/darker_gray"
+            android:fontFamily="@font/abel"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Olvidaste tu contraseña?"/>
+
+        <Button
+            android:id="@+id/inicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INICIO"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="70dp"
+            />
+
+        <TextView
+            android:id="@+id/nuevoUsuario"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/darker_gray"
+            android:fontFamily="@font/abel"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:textStyle="bold"
+            android:text="Eres nuevo? Registrate!"
+            android:transitionName="newUserTrans"/>
+
+    </LinearLayout>
+
+</LinearLayout>
